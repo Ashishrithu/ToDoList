@@ -1,0 +1,67 @@
+body{
+   
+    margin: 0px;
+    background-color: #c2b6b6;
+
+
+}
+
+h3{
+    
+    text-align: center;
+    color: #732e13;
+}
+
+#container{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+#container input{
+
+    padding: 10px;
+    border: #732e13 solid;
+    
+}
+
+#addTaskbtn{
+
+    border-radius: 5px;
+    border: #732e13 solid;
+
+
+}
+
+#addTaskbtn:hover{
+cursor: pointer;   
+background-color: #732e13; 
+color: #c2b6b6;
+transform: scale(1.2);
+transition: transform 0.3s ease-out;
+}
+
+#container ul,li{
+    margin-top: 15px;
+    text-align: center;
+    
+}
+
+.ebtn, .dbtn {
+  background-color: #732e13;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px; 
+}
+
+.ebtn, .dbtn:hover{
+
+    /* cursor: pointer; */
+    background-color: #c2b6b6;
+    color: #732e13;
+}
