@@ -1,67 +1,111 @@
-body{
-   
-    margin: 0px;
-    background-color: #c2b6b6;
-
-
-}
-
-h3{
-    
-    text-align: center;
-    color: #732e13;
-}
-
-#container{
-
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0d2c4, #c2b6b6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+h3 {
     text-align: center;
-    margin-top: 50px;
+    color: #5e1f0d;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     gap: 20px;
+    width: 100%;
+    max-width: 700px;
 }
 
-#container input{
-
-    padding: 10px;
-    border: #732e13 solid;
-    
+#container input {
+    padding: 12px 15px;
+    border: 2px solid #5e1f0d;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-#addTaskbtn{
-
-    border-radius: 5px;
-    border: #732e13 solid;
-
-
+#addTaskbtn {
+    border-radius: 8px;
+    border: 2px solid #5e1f0d;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #5e1f0d;
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
-#addTaskbtn:hover{
-cursor: pointer;   
-background-color: #732e13; 
-color: #c2b6b6;
-transform: scale(1.2);
-transition: transform 0.3s ease-out;
+#addTaskbtn:hover {
+    cursor: pointer;
+    background-color: #5e1f0d;
+    color: #fff;
+    transform: scale(1.1);
 }
 
-#container ul,li{
-    margin-top: 15px;
-    text-align: center;
-    
+#taskList {
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+    max-width: 600px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#taskList li {
+    display: flex;
+    justify-content: space-between; /* text left, buttons right */
+    align-items: center;
+    background-color: #fff;
+    padding: 12px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    word-break: break-word;
+}
+
+.task-text {
+    flex-grow: 1;         /* fill available space */
+    min-width: 0;         /* allow shrinking */
+    padding-right: 15px;  /* gap between text and buttons */
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;       /* prevent buttons from shrinking */
 }
 
 .ebtn, .dbtn {
-  background-color: #732e13;
-  color: white;
-  padding: 2px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 10px; 
+    background-color: #5e1f0d;
+    color: white;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.ebtn, .dbtn:hover{
-
-    /* cursor: pointer; */
-    background-color: #c2b6b6;
-    color: #732e13;
+.ebtn:hover, .dbtn:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #5e1f0d;
+    border: 1px solid #5e1f0d;
 }
